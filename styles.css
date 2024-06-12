@@ -99,4 +99,9 @@ body, html {
 
 .buttons a {
     margin: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+}
+
+.buttons a:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
 }
