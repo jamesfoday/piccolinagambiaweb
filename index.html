@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="svg/piccolinagambiafavicon1.svg">
     <title>Piccolina</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="fade-in responsive-text responsive-header">
-    <div class="navbar transparent">
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+    <div class="navbar">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">&#9776;</div>
         <a href="index.html" class="logo-outside">Piccolina</a>
         <!-- <div class="logo-outside">Piccolina</div> -->
-        <div class="search-icon">&#128269;</div>
+        <a href="contact-form.html" class="search-icon-link">
+            <img class="search-icon" id="searchIcon" src="svg/piccolinagambiaabt.svg" alt="Search Icon">
+        </a>
     </div>
 
     <div class="offcanvas-menu" id="offcanvasMenu">
@@ -39,11 +43,11 @@
                             <a href="sugar.html" class="smooth-transition">sugar</a>
                             <a href="white-corn.html" class="smooth-transition">White corn</a>
                             <a href="Yellow-corn.html" class="smooth-transition" >yellow corn</a>
-                            <a href="Long-grain-rice.html" class="smooth-transition">Long grain rice </a>
+                            <a href="Long-grain-rice.html" class="smooth-transition">Grain Rice </a>
                             <a href="grocery-oil.html" class="smooth-transition">Grocery Oil</a>
                             <a href="bean.html " class="smooth-transition">beans</a>
                             <a href="Rice.html" class="smooth-transition">Rice</a>
-                            <a href="shipping-and-marine-logistics.html" class="smooth-transition">Shipping and marine Logestic</a>
+                            <a href="//smagshipping.com" class="smooth-transition">Shipping</a>
                             <a href="storage.html" class="smooth-transition">storage</a>
                         </div>
                         <div class="menu-item" onclick="toggleSubMenu('submenu3')">Oil and Gas</div>
@@ -51,7 +55,7 @@
                             <a href="oil-and-gas.html">Oil and Gas</a>
                             <a href="oil-and-petroleum.html">Oil and petroleum</a>
                             <a href="gas-and-power.html">Gas and Power</a>
-                        </div>
+                        </div>  
                         <!-- <div class="menu-item" onclick="toggleSubMenu('submenu4')">Careers</div>
                         <div class="submenu" id="submenu4">
                             <a href="#">Opportunities</a>
@@ -59,9 +63,9 @@
                         </div> -->
                         <div class="menu-item" onclick="toggleSubMenu('submenu5')">Sustainability</div>
                         <div class="submenu" id="submenu5">
-                            <a href="governance-and-conduct.html">Governance and Conduct</a>
-                            <a href="safety.html">Safety, and Security</a>
-                            <a href="environment-and-climate.html">Environment and Climate</a>
+                            <a href="governance-and-conduct.html">Governance </a>
+                            <a href="safety.html">Safety</a>
+                            <a href="environment-and-climate.html">Environmental</a>
                         </div>
                         <!-- <div class="menu-item" onclick="toggleSubMenu('submenu6')">News Insights</div>
                         <div class="submenu" id="submenu6">
@@ -92,6 +96,7 @@
     </div>
     <script src="navbar.js"></script>
     
+    
     <!-- end menu -->
      
     <!-- banner begin -->
@@ -109,14 +114,14 @@
     <!-- carousel begin section -->
     <section class="carousel-section">
         <div class="carousel">
-            <div class="carousel-line"></div>
+            <div class="carousel-line  hide-on-small-smartphone hide-on-medium-smartphone  hide-on-small-tablet "></div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-content gradient-bg-1">
                         <img src="images/piccobg24.png" alt="Image 1" class="placeholder-image">
                         <p class="date">Oil and Gas</p>
                         <h3>Exploration and Production: We engage in the exploration and production of oil and gas, utilizing</h3>
-                        <a href="oil-and-gas.htm" class="read-more">Read more &gt;</a>
+                        <a href="oil-and-gas.html" class="read-more">Read more &gt;</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -144,15 +149,15 @@
                         <p class="date">Vegetable Oil</p>
                         <h3>Sourcing: We source premium vegetable oils, including palm, soybean, and sunflower oil, from leading producers worldwide.</h3>
                         <a href="grocery-oil.html" class="read-more">Read more &gt;</a>
-                        <p>Readable in EN FR</p>
+                        
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-content gradient-bg-5">
                         <img src="images/piccobg24.png" alt="Image 5" class="placeholder-image">
-                        <p class="date">5 Apr 2024 - Press release</p>
-                        <h3>Management changes</h3>
-                        <a href="#" class="read-more">Read more &gt;</a>
+                        <p class="date">long grain Rice</p>
+                        <h3>Delicate Texture and Aromatic Flavor in Every Grain</h3>
+                        <a href="Long-grain-rice.html" class="read-more">Read more &gt;</a>
                     </div>
                 </div>
             </div>
@@ -167,14 +172,16 @@
     <div class="report-section">
         <div class="report-content">
             <h2>Pioneering Sustainable Energy Solutions for a Greener Future</h2>
-            <button class="openModalBtn" data-modal-header="Oil and Gas" data-modal-content=" 
-                <a href='gas-and-power.html' class='gradient-text'>Gas and Power</a>.
-                <a oil-and-gas.html' class='gradient-text'>oil and gas</a>.
-                <a oil-and-petroleum.html' class='gradient-text'>Oil and petroleum</a>.
+            <button class="openModalBtn openBtn" data-modal-header="Oil and Gas" data-modal-content=" 
+                <a href='gas-and-power.html' class='gradient-text'>Gas and Power</a>
+                <a href='oil-and-gas.html' class='gradient-text'>oil and gas</a>
+                <a href='oil-and-petroleum.html' class='gradient-text'>Oil and petroleum</a>
                 ">Learn More</button>
+                
         </div>
+        <script src="script.js"></script>
     </div>
-
+    
 
     <!-- Modal -->
     <div class="modal">
@@ -184,8 +191,8 @@
             <p class="modal-body">Default content.</p>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    
+  
     <!-- report section end -->
     
     <!-- what we do section- -->
@@ -200,29 +207,32 @@
             <div class="right-column">
                 <p>At our core, we are dedicated to connecting vital resources with the industries and communities that need them. Our services span the full
                     spectrum of the commodity supply chain, ensuring that oil, gas, sugar, rice, and vegetable oil reach their destinations efficiently and sustainably.</p>
-                    <button class="openModalBtn" data-modal-header="Our Products" data-modal-content=" 
+                    <button class="openModalBtn openBtn" data-modal-header="Our Products" data-modal-content=" 
                     <a href='gas-and-power.html' class='gradient-text'>powder milk</a>
                     <a href='sugar.html' class='gradient-text'>sugar</a>
                     <a href='white-corn.html' class='gradient-text'>White corn</a>
                     <a href='Yellow-corn.html' class='gradient-text'>yellow corn</a>
-                    <a href='Long-grain-rice.html' class='gradient-text'>Long grain rice</a>
+                    <a href='Long-grain-rice.html' class='gradient-text'>Grain Rice</a>
                     <a href='grocery-oil.html' class='gradient-text'>Grocery Oil</a>
                     <a href='beans.html' class='gradient-text'>beans</a>
                     <a href='rice.html' class='gradient-text'>Rice</a>
-                    <a href='shipping-and-marine-logistics.html' class='gradient-text'>Shipping and marine Logestic</a>
+                    <a href='smagshipping.com' class='gradient-text'>Shipping</a>
                     <a href='storage.html' class='gradient-text'>storage</a>
                     ">Learn More</button>
+                    
             </div>
-            <div class="modal">
+            <script src="script.js"></script>
+            <!-- <div class="modal">
                 <div class="modal-content">
                     <span class="closeBtn">&times;</span>
-                    <a href="oil-and-gas.htm" class="gradient-text"> james</a>
+                    <a href="oil-and-gas.html" class="gradient-text"> james</a>
                     <a href="gas-and-power.html" class="gradient-text"> Gas and Power</a>
                     <a href="white-corn.html" class="White corn"> Oil and petroleum</a>
                 </div>
-            </div>
+            </div> -->
 
         </div>
+        <script src="script.js"></script>
         <div class="supply-chain-image">
             <img class="hide-on-small-smartphone hide-on-medium-smartphone  hide-on-small-tablet" src="images/piccobg23.png" alt="Supply Chain Image">
             <img class="hide-on-small-desktop hide-on-medium-desktop hide-on-large-desktop" src="images/1217.png" alt="Supply Chain Image">
@@ -249,18 +259,18 @@
             </div>
         </div>
 
-        <div id="tab2" class="tab-content" style="background-image: url('images/12.png');">
+        <div id="tab2" class="tab-content" style="background-image: url('images/12_optimized_.png');">
             <div class="overlay">
                 <div class="tab-text">
                     <h3>Prioritizing Well-being and Safety</h3>
                     <h1>Safety and Security First</h1>
-                    <p>Ensuring the health, safety, and security of our workforce through rigorous protocols and continuous improvement.</p>
+                    <p>Ensuring the health, Safety of our workforce through rigorous protocols and continuous improvement.</p>
                     <a href="safety.html" class="gradient-button">Learn More</a>
                 </div>
             </div>
         </div>
 
-        <div id="tab3" class="tab-content" style="background-image: url('images/10.png');">
+        <div id="tab3" class="tab-content" style="background-image: url('images/10_optimized_.png');">
             <div class="overlay">
                 <div class="tab-text">
                     <h3>Committed to a Sustainable Future</h3>
@@ -273,7 +283,7 @@
     </section>
     <!-- tab section end -->
 
-    <script src="script.js"></script>
+    
 
     <!-- global network section -->
     <section class="global-network-section">
@@ -298,7 +308,7 @@
                     <div class="newsletter-text">
                         <h3>RESPONSIBLY SUPPLYING RESOURCES</h3>
                         <h1>Our role in the energy transition</h1>
-                        <p>We play an active role in the energy transition, responsibly supplying vital commodities to meet current and future needs.</p>
+                        
                         <a href="newsletter.html" class="gradient-button">Signup for newsletter </a>
                     </div>
                 </div>
@@ -324,7 +334,7 @@
             </div>
             <div class="footer-column">
                 <ul>
-                    <li><a href="environment-and-climate.html" class="footer-link">Environment and Climate</a></li>
+                    <li><a href="environment-and-climate.html" class="footer-link">Environmental</a></li>
                 </ul>
             </div>
             <div class="footer-column">

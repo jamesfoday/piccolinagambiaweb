@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="svg/piccolinagambiafavicon1.svg">
     <title>Piccolina</title>
     <link rel="stylesheet" href="stylesabout.css">
 </head> 
 <body class="fade-in responsive-text responsive-header">
-    <div class="navbar transparent">
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+<div class="navbar">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">&#9776;</div>
         <a href="index.html" class="logo-outside">Piccolina</a>
         <!-- <div class="logo-outside">Piccolina</div> -->
-        <div class="search-icon">&#128269;</div>
+         <a href="contact-form.html" class="search-icon-link">
+            <img class="search-icon" id="searchIcon" src="svg/piccolinagambiaabt.svg" alt="Search Icon">
+        </a>
     </div>
   
     <div class="offcanvas-menu" id="offcanvasMenu">
@@ -39,11 +42,11 @@
                             <a href="sugar.html" class="smooth-transition">sugar</a>
                             <a href="white-corn.html" class="smooth-transition">White corn</a>
                             <a href="Yellow-corn.html" class="smooth-transition" >yellow corn</a>
-                            <a href="Long-grain-rice.html" class="smooth-transition">Long grain rice </a>
+                            <a href="Long-grain-rice.html" class="smooth-transition">Grain Rice </a>
                             <a href="grocery-oil.html" class="smooth-transition">Grocery Oil</a>
                             <a href="bean.html " class="smooth-transition">beans</a>
                             <a href="Rice.html" class="smooth-transition">Rice</a>
-                            <a href="shipping-and-marine-logistics.html" class="smooth-transition">Shipping and marine Logestic</a>
+                            <a href="smagshipping.com" class="smooth-transition">Shipping</a>
                             <a href="storage.html" class="smooth-transition">storage</a>
                         </div>
                         <div class="menu-item" onclick="toggleSubMenu('submenu3')">Oil and Gas</div>
@@ -59,9 +62,9 @@
                         </div> -->
                         <div class="menu-item" onclick="toggleSubMenu('submenu5')">Sustainability</div>
                         <div class="submenu" id="submenu5">
-                            <a href="governance-and-conduct.html">Governance and Conduct</a>
-                            <a href="safety.html">Safety, and Security</a>
-                            <a href="environment-and-climate.html">Environment and Climate</a>
+                            <a href="governance-and-conduct.html">Governance </a>
+                            <a href="safety.html">Safety</a>
+                            <a href="environment-and-climate.html">Environmental</a>
                         </div>
                         <!-- <div class="menu-item" onclick="toggleSubMenu('submenu6')">News Insights</div>
                         <div class="submenu" id="submenu6">
@@ -90,7 +93,7 @@
             </div>
         </div>
     </div>
-    <script src="navbar.js"></script>
+    <script src="navbarabout.js"></script>
     <script src="script.js"></script>
   
     <!-- end menu -->
@@ -190,7 +193,6 @@
                 <div class="newsletter-text">
                     <h3>RESPONSIBLY SUPPLYING RESOURCES</h3>
                     <h1>Our role in the energy transition</h1>
-                    <p>We play an active role in the energy transition, responsibly supplying vital commodities to meet current and future needs.</p>
                     <a href="newsletter.html" class="gradient-button">Signup for newsletter </a>
                 </div>
             </div>
@@ -216,7 +218,7 @@
         </div>
         <div class="footer-column">
             <ul>
-                <li><a href="environment-and-climate.html" class="footer-link">Environment and Climate</a></li>
+                <li><a href="environment-and-climate.html" class="footer-link">Environmental</a></li>
             </ul>
         </div>
         <div class="footer-column">
